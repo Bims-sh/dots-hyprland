@@ -51,7 +51,6 @@ export const keybindList = [[
             { "keys": ["󰖳", "+", "/"], "action": "Toggle this cheatsheet" },
             { "keys": ["󰖳", "+", "N"], "action": "Toggle system sidebar" },
             { "keys": ["󰖳", "+", "B", "OR", "󰖳", "+", "O"], "action": "Toggle utilities sidebar" },
-            { "keys": ["󰖳", "+", "K"], "action": "Toggle virtual keyboard" },
             { "keys": ["Ctrl", "Alt", "+", "Del"], "action": "Power/Session menu" },
 
             { "keys": ["Esc"], "action": "Exit a window" },
@@ -88,7 +87,7 @@ export const keybindList = [[
         "icon": "apps",
         "name": "Apps",
         "binds": [
-            { "keys": ["󰖳", "+", "T"], "action": "Launch terminal: foot" },
+            { "keys": ["󰖳", "+", "T"], "action": "Launch terminal: kitty" },
             { "keys": ["󰖳", "+", "W"], "action": "Launch browser: Firefox" },
             { "keys": ["󰖳", "+", "C"], "action": "Launch editor: vscode" },
             { "keys": ["󰖳", "+", "X"], "action": "Launch editor: GNOME Text Editor" },

@@ -14,9 +14,7 @@ depends=(
 	ttf-material-symbols-variable-git
 	ttf-space-mono-nerd
 	ttf-rubik-vf
-  ttf-gabarito-git
-	fish
-	foot
+	ttf-gabarito-git
 	starship
 )
 

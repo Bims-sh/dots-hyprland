@@ -76,11 +76,6 @@ const Utilities = () => Box({
                 Utils.execAsync(['hyprpicker', '-a']).catch(print)
             }
         }),
-        UtilButton({
-            name: 'Toggle on-screen keyboard', icon: 'keyboard', onClicked: () => {
-                toggleWindowOnAllMonitors('osk');
-            }
-        }),
     ]
 })
 

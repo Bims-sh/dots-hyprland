@@ -147,7 +147,6 @@ const WorkspaceContents = (count = 10) => {
 export default () => EventBox({
     onScrollUp: (self) => switchToRelativeWorkspace(self, -1),
     onScrollDown: (self) => switchToRelativeWorkspace(self, +1),
-    onMiddleClick: () => toggleWindowOnAllMonitors('osk'),
     onSecondaryClick: () => App.toggleWindow('overview'),
     attribute: { clicked: false },
     child: Box({

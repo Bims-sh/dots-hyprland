@@ -36,7 +36,7 @@ let configOptions = {
         'network': "XDG_CURRENT_DESKTOP=\"gnome\" gnome-control-center wifi",
         'settings': "XDG_CURRENT_DESKTOP=\"gnome\" gnome-control-center",
         'taskManager': "gnome-usage",
-        'terminal': "foot", // This is only for shell actions
+        'terminal': "kitty", // This is only for shell actions
     },
     'battery': {
         'low': 20,
@@ -72,9 +72,6 @@ let configOptions = {
     },
     'music': {
         'preferredPlayer': "plasma-browser-integration",
-    },
-    'onScreenKeyboard': {
-        'layout': "qwerty_full", // See modules/onscreenkeyboard/onscreenkeyboard.js for available layouts
     },
     'overview': {
         'scale': 0.18, // Relative to screen size

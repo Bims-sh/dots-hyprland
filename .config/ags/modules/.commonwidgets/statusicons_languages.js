@@ -10,6 +10,11 @@ export const languages = [
         flag: '🇺🇸'
     },
     {
+        layout: 'de',
+        name: 'German',
+        flag: '🇩🇪',
+    },
+    {
         layout: 'ru',
         name: 'Russian',
         flag: '🇷🇺',

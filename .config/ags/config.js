@@ -16,7 +16,6 @@ import Dock from './modules/dock/main.js';
 import Corner from './modules/screencorners/main.js';
 import Crosshair from './modules/crosshair/main.js';
 import Indicator from './modules/indicators/main.js';
-import Osk from './modules/onscreenkeyboard/main.js';
 import Overview from './modules/overview/main.js';
 import Session from './modules/session/main.js';
 import SideLeft from './modules/sideleft/main.js';
@@ -47,7 +46,6 @@ const Windows = () => [
     forMonitors(Cheatsheet),
     SideLeft(),
     SideRight(),
-    forMonitors(Osk),
     forMonitors(Session),
     ...(userOptions.dock.enabled ? [forMonitors(Dock)] : []),
     ...(userOptions.appearance.fakeScreenRounding !== 0 ? [
@@ -59,19 +57,6 @@ const Windows = () => [
     forMonitors(BarCornerTopleft),
     forMonitors(BarCornerTopright),
 ];
-
-const CLOSE_ANIM_TIME = 210; // Longer than actual anim time to make sure widgets animate fully
-const closeWindowDelays = {}; // For animations
-for (let i = 0; i < (Gdk.Display.get_default()?.get_n_monitors() || 1); i++) {
-    closeWindowDelays[`osk${i}`] = CLOSE_ANIM_TIME;
-}
-
-App.config({
-    css: `${COMPILED_STYLE_DIR}/style.css`,
-    stackTraceOnError: true,
-    closeWindowDelay: closeWindowDelays,
-    windows: Windows().flat(1),
-});
 
 // Stuff that don't need to be toggled. And they're async so ugh...
 forMonitorsAsync(Bar);
